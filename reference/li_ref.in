@@ -1,0 +1,35 @@
+&CONTROL
+  calculation = 'scf',
+  outdir = './out',
+  prefix = 'li_ref',
+  pseudo_dir = '/content/drive/MyDrive/MSMSE III SEM/Project/pseudo',
+/
+&SYSTEM
+  degauss = 0.02,
+  ecutrho = 200,
+  ecutwfc = 50,
+  ibrav = 0,
+  nat = 2,
+  ntyp = 1,
+  occupations = 'smearing',
+  smearing = 'gaussian',
+/
+&ELECTRONS
+  conv_thr = 1d-06,
+  mixing_beta = 0.3,
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+  Li  6.9410 li_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+  Li 0.000000 0.000000 0.000000
+  Li 0.500000 0.500000 0.500000
+K_POINTS automatic
+  4 4 4 0 0 0
+CELL_PARAMETERS angstrom
+  3.510000 0.000000 0.000000
+  0.000000 3.510000 0.000000
+  0.000000 0.000000 3.510000
