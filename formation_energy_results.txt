@@ -1,0 +1,10 @@
+FORMATION ENERGY CALCULATION RESULTS
+========================================
+Compound: Li₂S
+Li₂S total energy: -722.346938 eV
+Li reference energy: -196.887983 eV/atom
+S reference energy: -326.959457 eV/atom
+Sum of reference energies (2Li + S): -720.735424 eV
+Formation energy (ΔE_f): -1.611514 eV per formula unit
+Formation energy per atom: -0.537171 eV/atom
+Formation energy: -155.49 kJ/mol
