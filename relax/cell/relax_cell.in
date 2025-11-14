@@ -1,0 +1,41 @@
+&CONTROL
+  calculation = 'vc-relax',
+  forc_conv_thr = 0.001,
+  nstep = 100,
+  outdir = './out',
+  prefix = 'relax_cell',
+  press_conv_thr = 0.5,
+  pseudo_dir = '/content/drive/MyDrive/MSMSE III SEM/Project/pseudo',
+/
+&SYSTEM
+  degauss = 0.02,
+  ecutrho = 200,
+  ecutwfc = 50,
+  ibrav = 0,
+  nat = 3,
+  ntyp = 2,
+  occupations = 'smearing',
+  smearing = 'gaussian',
+/
+&ELECTRONS
+  conv_thr = 1d-06,
+  electron_maxstep = 200,
+  mixing_beta = 0.3,
+/
+&IONS
+/
+&CELL
+/
+ATOMIC_SPECIES
+  Li  6.9410 li_pbe_v1.4.uspp.F.UPF
+  S  32.0650 s_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+  Li 0.214896 0.214896 0.214896
+  Li 0.785104 0.785104 0.785104
+  S -0.000000 0.000000 0.000000
+K_POINTS automatic
+  4 4 4 0 0 0
+CELL_PARAMETERS angstrom
+  5.700000 0.000000 0.000000
+  0.000000 5.700000 0.000000
+  0.000000 0.000000 5.700000
